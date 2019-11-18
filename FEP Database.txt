@@ -1,0 +1,35 @@
+CREATE DATABASE FEP;
+CREATE TABLE Admin (
+    id  int(11) NOT NULL AUTO_INCREMENT,
+    Username varchar(255) ,
+    Password varchar(255) ,	
+    Eamil  varchar(255) ,	
+   PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE Examdata (
+    id  int(11) NOT NULL AUTO_INCREMENT,
+    Class_ID varchar(255) ,
+    Subject_ID varchar(255) ,	
+    Student_ID varchar(255) ,
+    Subject_name varchar(255) ,
+    lecturer_name varchar(255) ,
+    exam_days varchar(255) ,
+    exam_dates varchar(255) ,
+    exam_times varchar(255) ,
+   PRIMARY KEY (`id`)
+);
+
+CREATE TABLE Process_State  (
+   PSSD bit(1)	
+);
+
+CREATE TABLE students_away (
+    Student_ID int(11) NOT NULL,
+    town varchar(255) ,
+    distance int(11) ,	
+   department varchar(255) 
+);
+
+
